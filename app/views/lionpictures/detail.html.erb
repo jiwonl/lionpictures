@@ -1,0 +1,18 @@
+<div class="main-container">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/<%=@movie.youtubelink %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
+    </div>
+    <div class="info-container">
+        영화제목: <%=@movie.title %><br><br>
+        감독: <%=@movie.director%><br><br>
+        배우: <%=@movie.actor%><br><br>
+        제작단체: <%=@movie.team%><br><br>
+        제작일자: <%=@movie.date%><br><br>
+        <a href='/lionpictures/delete/<%=@movie.id%>'>삭제</a>
+        <a href='/lionpictures/edit/<%=@movie.id%>'>수정</a><br><br>
+    </div>
+</div>
+<div class="detail-container">
+    세부사항<br>
+    <%=@movie.content%><br><br>
+</div>

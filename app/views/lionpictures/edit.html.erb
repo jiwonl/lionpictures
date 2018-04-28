@@ -1,0 +1,17 @@
+<h1>수정</h1></h1>
+
+<form action='/lionpictures/update/<%=@movie.id%>' method='post' enctype='multipart/form-data'>
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    영화 제목: <input type='text' name='post_title' value='<%=@movie.title%>'><br><br>
+    감독: <input type='text' name='post_director' value='<%=@movie.director%>'><br><br>
+    배우:  <input type='text' name='post_actor' value='<%=@movie.actor%>'><br><br>
+    제작 단체:  <input type='text' name='post_team' value='<%=@movie.team%>'><br><br>
+    제작 일자:  <input type='date' name='post_date' value='<%=@movie.date%>'><br><br>
+    유튜브 링크:  <input type='text' name='post_youtubelink' value='<%=@movie.youtubelink%>'><br><br>
+    대표 이미지 파일:  <%= file_field_tag 'post_imagefile' %><br><br>
+    영화 설명:  <textarea name='post_content'><%=@movie.content%></textarea><br><br>
+    
+    
+    
+    <input type="submit" value="수정">
+</form>

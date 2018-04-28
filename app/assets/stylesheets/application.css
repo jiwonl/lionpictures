@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@font-face { font-family: 'Godo'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff'); } @font-face { font-family: 'Godo'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff'); } .godo * { font-family: 'Godo', sans-serif; }
+html{
+    font-size: 15px;
+    line-height: 1.6;
+}
+*{
+    font-family: 'KoPubDotumMedium', sans-serif;
+    color: #333;
+}
+[lang="en"]{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.navbar-dark.bg-dark{
+    background-color: black !important;
+}
+
+.nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button.navbar-toggler: focus{
+    outline: none;
+}
+
+.navbar-dark .navbar-toggler{
+    border: none;
+}
+
+.introimage-item{
+    background-image: url(/intro.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro_title{
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.intro_text{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.btn.btn-light{
+    border-radius: 100px;
+    background-color: grey !important;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel-item:nth-child(1){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%), url(/magazine1.jpg);
+}
+.carousel-item:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%), url(/magazine2.jpg);
+}
+.carousel-item:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%), url(/magazine3.jpg);
+}
+
+.carousel-item{
+    height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.cover_title{
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.cover_text{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.brn.brn-dark{
+    border-radius: 100px;
+    background-color: #ff9e1e !important;
+    border: none;
+}
+
+@media screen and (max-width: 576px){
+    .carousel-item{
+        height: 80vh;
+    }
+    .cover_title{
+        font-size: 2rem;
+    }
+}
+
+.series{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.series_title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+
+/*Upload page*/
+.upload-container{
+    margin: 100px 200px 0 200px;
+}
+
+/*Detail page*/
+.main-container{
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.video-container iframe{
+    margin-top: 30px !important;
+    width: 560px;
+    height: 360px;
+}
+
+.info-container{
+    width: 300px;
+    padding-left: 30px;
+}
+
+.detail-container{
+    padding-left: 30px;
+}
